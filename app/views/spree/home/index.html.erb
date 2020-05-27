@@ -7,7 +7,13 @@
     alt="<%= Spree.t('homepage.summer_collection')%>" />
 
   <div class="hero-content">
-
+    <div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    </div>
     <div>
       <%= link_to Spree.t('homepage.shop_now'), spree.products_path, class: 'btn btn-primary spree-btn px-5' %>
     </div>
@@ -19,27 +25,27 @@
     <div class="col-6">
 
       <div class="homepage-taxon-box mb-3">
-        <%= link_to spree.nested_taxons_path('men') do %>
+        <%= link_to spree.nested_taxons_path('vape') do %>
           <img class="w-100 lazyload"
             data-src="<%= asset_path('homepage/category_banner_upper.jpg') %>"
             data-srcset="<%= image_source_set('homepage/category_banner_upper') %>"
-            alt="<%= Spree.t('homepage.men')%>" />
+            alt="<%= Spree.t('homepage.vape')%>" />
 
           <div class="homepage-taxon-box-text">
-            <h3><%= Spree.t('homepage.men') %></h3>
+            <h3><%= Spree.t('homepage.vape') %></h3>
           </div>
         <% end %>
       </div>
 
       <div class="homepage-taxon-box">
-        <%= link_to spree.nested_taxons_path('sportswear') do %>
+        <%= link_to spree.nested_taxons_path('beverages') do %>
           <img class="w-100 lazyload"
             data-src="<%= asset_path('homepage/category_banner_lower.jpg') %>"
             data-srcset="<%= image_source_set('homepage/category_banner_lower') %>"
-            alt="<%= Spree.t('homepage.sportswear')%>" />
+            alt="<%= Spree.t('homepage.beverages')%>" />
 
-          <div class="homepage-taxon-box-text" role="img" aria-label="<%= Spree.t('homepage.sportswear') %>">
-            <h3><%= Spree.t('homepage.sportswear') %></h3>
+          <div class="homepage-taxon-box-text" role="img" aria-label="<%= Spree.t('homepage.beverages') %>">
+            <h3><%= Spree.t('homepage.beverages') %></h3>
           </div>
         <% end %>
       </div>
@@ -49,14 +55,14 @@
     <div class="col-6 d-flex flex-column">
 
       <div class="homepage-taxon-box flex-grow-1">
-        <%= link_to spree.nested_taxons_path('women') do %>
+        <%= link_to spree.nested_taxons_path('capsules') do %>
           <img class="w-100 lazyload"
             data-src="<%= asset_path('homepage/big_category_banner.jpg') %>"
             data-srcset="<%= image_source_set('homepage/big_category_banner') %>"
-            alt="<%= Spree.t('homepage.women')%>" />
+            alt="<%= Spree.t('homepage.capsules')%>" />
 
           <div class="homepage-taxon-box-text">
-            <h3><%= Spree.t('homepage.women') %></h3>
+            <h3><%= Spree.t('homepage.capsules') %></h3>
           </div>
         <% end %>
       </div>
