@@ -23,7 +23,7 @@ gem 'jbuilder', '~> 2.7'
 # gem 'bcrypt', '~> 3.1.7'
 
 # Use AWS for deploy
-gem 'aws-sdk', '~> 2'
+gem 'aws-sdk-s3', require: false
 
 # Add Spree gems
 gem 'spree', '~> 4.1'
