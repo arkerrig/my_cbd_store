@@ -22,6 +22,9 @@ gem 'jbuilder', '~> 2.7'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+# Use AWS for deploy
+gem 'aws-sdk', '~> 2'
+
 # Add Spree gems
 gem 'spree', '~> 4.1'
 gem 'spree_auth_devise', '~> 4.1'
