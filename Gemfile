@@ -63,3 +63,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Gem for GDPR compiance
 gem 'cookies_eu'
+
+# Gem for Spree Contact Us form page
+gem 'spree_contact_us', github: 'spree-contrib/spree_contact_us'
