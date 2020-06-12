@@ -66,3 +66,9 @@ gem 'cookies_eu'
 
 # Gem for Spree Contact Us form page
 gem 'spree_contact_us', github: 'spree-contrib/spree_contact_us'
+
+# Gem for Spree Sitemap
+gem 'spree_sitemap', github: 'spree-contrib/spree_sitemap'
+
+# Gem for whenever -chron jobs
+gem 'whenever', require: false
