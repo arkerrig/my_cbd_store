@@ -72,3 +72,4 @@ gem 'spree_sitemap', github: 'spree-contrib/spree_sitemap'
 
 # Gem for whenever -chron jobs
 gem 'whenever', require: false
+
