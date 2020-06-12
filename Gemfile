@@ -72,6 +72,3 @@ gem 'spree_sitemap', github: 'spree-contrib/spree_sitemap'
 
 # Gem for whenever -chron jobs
 gem 'whenever', require: false
-
-# Gem for email setup
-gem 'spree_mail_settings', github: 'spree-contrib/spree_mail_settings'
