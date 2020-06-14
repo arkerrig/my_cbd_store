@@ -1,4 +1,12 @@
 GIT
+  remote: https://github.com/arkerrig/spree_mail_settings.git
+  revision: 722c04e75e69dcdb16b8be0374943db4ca210f59
+  specs:
+    spree_mail_settings (3.3.0)
+      spree_auth_devise (>= 3.1.0, <= 4.1.7)
+      spree_backend (>= 3.1.0, <= 4.1.7)
+
+GIT
   remote: https://github.com/spree-contrib/spree_contact_us.git
   revision: 9bacb32536eb1d78bd287e7725030463faed97c1
   specs:
@@ -448,6 +456,7 @@ DEPENDENCIES
   spree_auth_devise (~> 4.1)
   spree_contact_us!
   spree_gateway (~> 3.7)
+  spree_mail_settings!
   spree_sitemap!
   spring
   spring-watcher-listen (~> 2.0.0)

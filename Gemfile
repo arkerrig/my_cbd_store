@@ -73,3 +73,6 @@ gem 'spree_sitemap', github: 'spree-contrib/spree_sitemap'
 # Gem for whenever -chron jobs
 gem 'whenever', require: false
 
+# Gem for Spree mail settings - point to arkerrig fork on github
+gem 'spree_mail_settings', github: 'arkerrig/spree_mail_settings'
+
