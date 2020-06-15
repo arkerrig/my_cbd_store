@@ -75,4 +75,3 @@ gem 'whenever', require: false
 
 # Gem for Spree mail settings - point to arkerrig fork on github
 gem 'spree_mail_settings', github: 'arkerrig/spree_mail_settings'
-

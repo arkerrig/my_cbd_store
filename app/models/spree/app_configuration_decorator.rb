@@ -1,5 +1,5 @@
 require 'spree/core'
-Spree::AppConfigurationDecorator.class_eval do
+Spree::AppConfiguration.class_eval do
     preference :mails_from, :string, default: 'spree@example.com'
     preference :enable_mail_delivery, :boolean, default: true
     preference :mail_bcc, :string, default: 'spree@example.com'
