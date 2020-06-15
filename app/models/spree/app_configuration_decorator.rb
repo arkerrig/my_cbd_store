@@ -1,7 +1,5 @@
 require 'spree/core'
-config = Rails.application.config
 
-config.after_initialization do
 Spree::AppConfiguration.class_eval do
     preference :mails_from, :string, default: 'spree@example.com'
     preference :enable_mail_delivery, :boolean, default: true
@@ -16,5 +14,4 @@ Spree::AppConfiguration.class_eval do
     preference :mail_auth_type, :string#, default: Core::MailSettings::MAIL_AUTH[0]
     preference :smtp_username, :string, default: nil
     preference :smtp_password, :string, default: nil
-end
 end
