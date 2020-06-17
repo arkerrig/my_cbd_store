@@ -31,21 +31,8 @@ Rails.application.configure do
   # Store uploaded files on the local file system (see config/storage.yml for options).
   config.active_storage.service = :local
 
-  config.action_mailer.perform_deliveries = true
   # Don't care if the mailer can't send.
-  config.action_mailer.raise_delivery_errors = true
-  config.action_mailer.default_options = {from: 'no-reply@lemontreesc.com'}
-
-  config.action_mailer.delivery_method = :smtp
-  config.action_mailer.smtp_settings = {
-    address:          'smtp.mailgun.org',
-    port:             25,
-    domain:           'cbdlemontree.com',
-    user_name:        'postmaster@sandbox1948c2174da64c5b94b2f8bd3fb787ca.mailgun.org',
-    password:         'd9961faff44f07e84b8d06211e197acd-1b6eb03d-6f6e8464',
-    authentication:   'plain',
-    enable_starttls_auto: true  }
-
+  config.action_mailer.raise_delivery_errors = false
 
   config.action_mailer.perform_caching = false
 

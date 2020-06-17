@@ -49,7 +49,7 @@
             </div>
             <div>Call us now: 831.291.1631</div>
             <% if current_store.mail_from_address %>
-              <div><a href="mailto:sales@cbdlemontree.com">sales@cbdlemontree.com</a></div>
+              <div><%= Spree.t(:email) %>: <%= current_store.mail_from_address %></div>
             <% end %>
             <p>
             <div><a href="./contact-us">Wholesale Inquiries</div>
