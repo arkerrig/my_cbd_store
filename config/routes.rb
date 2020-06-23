@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :users
   # This line mounts Spree's routes at the root of your application.
   # This means, any requests to URLs such as /products, will go to
   # Spree::ProductsController.
@@ -10,7 +11,14 @@ Rails.application.routes.draw do
   mount Spree::Core::Engine, at: '/'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 
-  Rails.application.routes.draw do
+Rails.application.routes.draw do
+  resources :users
     get "/policy/:page" => "policy#show"
+end
+
+
+Rails.application.routes.draw do
+  resources :users
+    get "/landing/:page" => "landing#show"
   end
 end

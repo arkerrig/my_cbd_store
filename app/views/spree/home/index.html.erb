@@ -1,4 +1,43 @@
+<style>
+    #overlay{
+      position: fixed;
+      top: 0%;
+      left: 0%;
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      opacity:.80;
+      z-index:1001;
+    }
+
+      #announcement{
+        display: none;
+        position: absolute;
+        width: 250px;
+        height: 120px;
+        padding: 16px 16px;
+        text-align: center;
+        border: 16px #9D9C9C;
+        background-color: white;
+        z-index:1002;
+      }
+      #yes{
+        display: inline;
+        float: left;
+        padding-left: 16px;
+      }
+      #notold{
+        display: inline;
+        float: right;
+        padding-right: 16px;
+      }
+</style>
+
 <% @body_id = 'home' %>
+
+
+
+
 
 <%= render 'cookies_eu/consent_banner' %>
 
@@ -23,4 +62,38 @@
 </div>
 
 
+<div id="announcement">
+  <p>Are you at least 21?</p>
    
+  <a id="yes" href="/">Yes</a>
+
+  <a id="notold" href="https://worldcat.org/libraries">No</a>
+</div>
+
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+    <script>
+      jQuery.fn.center = function () {
+        var w = $(window);
+        this.css("position","absolute");
+        this.css("top", Math.max(0, (
+          (w.height() - $(this).outerHeight()) / 2) + w.scrollTop()
+        ) + "px");
+        this.css("left", Math.max(0, (
+          (w.width() - $(this).outerWidth()) / 2) + w.scrollLeft()
+        ) + "px");
+        return this;
+      }
+      var hasReadAnnouncement = localStorage.getItem("hasReadAnnouncement");
+      if (!hasReadAnnouncement){
+        $('<div>', {id : 'overlay'}).appendTo('body');
+        $("#announcement").fadeIn('slow').center();
+      }
+      $("#yes").click(function(e){
+        localStorage.setItem("hasReadAnnouncement", "true");
+        $("#announcement").remove();
+        $("#overlay").remove();
+        location.reload(true);
+        e.preventDefault();
+      });
+
+    </script>
