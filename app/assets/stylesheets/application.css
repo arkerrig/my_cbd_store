@@ -12,10 +12,12 @@
  *
  *= require_tree .
  *= require_self
- */
+ *= require cookies_eu
+*/
 
  abutton {
-    background-color: #4CAF50; /* Green */
+    background-color: #4CAF50; /* Green *= require cookies_eu
+*/
     border: none;
     color: white;
     padding: 15px 32px;
