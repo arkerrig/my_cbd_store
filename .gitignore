@@ -35,3 +35,4 @@
 yarn-debug.log*
 .yarn-integrity
 public/sitemap*
+./blob/f6f7df8cb37d3ce8414c62f16abbdd468f8c1a30/app/models/spree/app_configuration_decorator.rb
